@@ -31,4 +31,5 @@ function parseScroll() {
   }, 250));
 }
 
-$(document).bind("DOMMouseScroll", parseScroll);
+$(document).bind("DOMMouseScroll", parseScroll); //firefox
+$(window).bind("scroll", parseScroll); //chrome, ie
